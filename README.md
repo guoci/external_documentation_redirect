@@ -30,12 +30,16 @@ Currently supported modules:
 - `tensorflow`, `tensorflow.keras`
   
   Requires adding `keras` and `tensorflow` URL pattern, see screenshot for an example.
-  
+
   For `keras`, do import from `tensorflow.keras` instead of `keras`, for example:
   `import tensorflow.keras as keras`
   instead of 
   `import keras`
   
+  Users from China may want to override the default documentation site with:
+
+  `https://guoci.github.io/external_documentation_redirect/?qname={element.qname}&docsite=https%3A%2F%2Ftensorflow.google.cn`
+
 
 
 ### Running a local instance
