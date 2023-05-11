@@ -25,6 +25,7 @@ Currently supported modules:
 - `pytest`
 
   add the URL pattern to `_pytest`
+- `pytorch`
 - `scipy`
 - `tensorflow`, `tensorflow.keras`
   
