@@ -27,6 +27,7 @@ Currently supported modules:
   add the URL pattern to `_pytest`
 - `pytorch`
 - `scipy`
+- `sklearn`
 - `tensorflow`, `tensorflow.keras`
   
   Requires adding `keras` and `tensorflow` URL pattern, see screenshot for an example.
