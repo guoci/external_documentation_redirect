@@ -1,8 +1,10 @@
 # Python external documentation redirect for JetBrains IDEs
 
+Open html documentation from PyCharm.
+
 This is the code for website to redirect to external documentation from the [`View external documentation`](https://www.jetbrains.com/help/pycharm/settings-tools-python-external-documentation.html) feature in Pycharm (or other Jetbrains IDEs with the Python plugin).
 
-Pycharm hardly gives the correct URL for the documentation of 3rd party libraries. e.g. [PY-30970](https://youtrack.jetbrains.com/issue/PY-30970/Cannot-set-up-external-documentation-for-Django-2.0), [PY-36368](https://youtrack.jetbrains.com/issue/PY-36368/Bad-external-documentation-links-to-symbols-imported-directly-from-numpy-module), [PY-36306](https://youtrack.jetbrains.com/issue/PY-36306/Python-external-documentation-not-working-for-numpy), [PY-43736](https://youtrack.jetbrains.com/issue/PY-43736/Python-External-Documentation-Add-more-libraries-and-make-it-default-if-internal-is-missing)
+PyCharm hardly gives the correct URL for the documentation of 3rd party libraries. e.g. [PY-30970](https://youtrack.jetbrains.com/issue/PY-30970/Cannot-set-up-external-documentation-for-Django-2.0), [PY-36368](https://youtrack.jetbrains.com/issue/PY-36368/Bad-external-documentation-links-to-symbols-imported-directly-from-numpy-module), [PY-36306](https://youtrack.jetbrains.com/issue/PY-36306/Python-external-documentation-not-working-for-numpy), [PY-43736](https://youtrack.jetbrains.com/issue/PY-43736/Python-External-Documentation-Add-more-libraries-and-make-it-default-if-internal-is-missing)
 
 Since most external documentation for 3rd party libraries do not follow a fixed pattern, it is impossible to use a template to give the correct URL for the documentation. This website uses a documentation mapping to redirect to the documentation URL.
 
