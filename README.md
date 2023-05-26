@@ -10,9 +10,39 @@ Since most external documentation for 3rd party libraries do not follow a fixed 
 
 ## Usage
 
-### Example configuration  
+### Example configuration
 ![example configuration](config.png)
 
+There are 2 methods to configure, by editing IDE config files or changing settings with the IDE
+#### Editing config files
+Go to your [configuration directory](https://www.jetbrains.com/help/idea/directories-used-by-the-ide-to-store-settings-caches-plugins-and-logs.html#config-directory), open `options/other.xml`.
+Look for
+```xml
+  <component name="PythonDocumentationMap">
+    <option name="entries">
+      <map>
+        <entry key="..." value="..." />
+        ...
+        <entry key="..." value="..." />
+      </map>
+    </option>
+  </component>
+```
+put the following after the last `entry` tag.
+```xml
+        <entry key="_pytest" value="https://guoci.github.io/external_documentation_redirect/?qname={element.qname}" />
+        <entry key="django" value="https://guoci.github.io/external_documentation_redirect/?qname={element.qname}" />
+        <entry key="keras" value="https://guoci.github.io/external_documentation_redirect/?qname={element.qname}" />
+        <entry key="matplotlib" value="https://guoci.github.io/external_documentation_redirect/?qname={element.qname}" />
+        <entry key="numpy" value="https://guoci.github.io/external_documentation_redirect/?qname={element.qname}" />
+        <entry key="pandas" value="https://guoci.github.io/external_documentation_redirect/?qname={element.qname}" />
+        <entry key="scipy" value="https://guoci.github.io/external_documentation_redirect/?qname={element.qname}" />
+        <entry key="sklearn" value="https://guoci.github.io/external_documentation_redirect/?qname={element.qname}" />
+        <entry key="tensorflow" value="https://guoci.github.io/external_documentation_redirect/?qname={element.qname}" />
+        <entry key="torch" value="https://guoci.github.io/external_documentation_redirect/?qname={element.qname}" />
+```
+
+#### With IDE GUI
 In `Settings` :arrow_right: `Tools` :arrow_right: `(Python) External Documentation`, change URLs for the supported modules to:
 
 `https://guoci.github.io/external_documentation_redirect/?qname={element.qname}`
