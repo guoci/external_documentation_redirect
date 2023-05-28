@@ -1,5 +1,7 @@
 # Python external documentation redirect for JetBrains IDEs
 
+**Now available as a PyCharm [plugin](https://github.com/guoci/PyCharm-PythonDocumentationLinkProvider).**
+
 Open html documentation from PyCharm.
 
 This is the code for website to redirect to external documentation from the [`View external documentation`](https://www.jetbrains.com/help/pycharm/settings-tools-python-external-documentation.html) feature in Pycharm (or other Jetbrains IDEs with the Python plugin).
